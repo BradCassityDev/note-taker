@@ -9,19 +9,24 @@ router.get('/notes', (req, res) => {
 
 // Get note by id
 router.get('/notes/:id', (req, res) => {
-
+    
 });
 
 // Post a new note
 router.post('/notes', (req, res) => {
-    // Give each a unique ID
-
+    createNote(req.body, db);
     res.send('here');
 });
 
 // Delete Note
 router.delete('/notes/:id', (req, res) => {
+    const result = deleteNoteById(req.params.id, db);
 
+    if (result) {
+        res.send(result);
+    } else {
+        res.send(404);
+    }
 });
 
 module.exports = router;
