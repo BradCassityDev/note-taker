@@ -1,17 +1,19 @@
-[
-  {
-    "title": "1",
-    "text": "1",
-    "id": "3w6zb5okg5jpk5s"
-  },
-  {
-    "title": "dasfsdf",
-    "text": "asdfsdaf",
-    "id": "3w6zg7okg5kkcwe"
-  },
-  {
-    "title": "sdaf",
-    "text": "sdafsdas",
-    "id": "3w6z9xskg5komac"
-  }
-]
+{
+  "notes": [
+    {
+      "title": "Test note 1",
+      "text": "This is a test note",
+      "id": "3w6zkokg5mzss1"
+    },
+    {
+      "title": "Test Note 2",
+      "text": "This is another test note",
+      "id": "3w6zkokg5n000v"
+    },
+    {
+      "title": "Test Note 3",
+      "text": "This is yet another test note.",
+      "id": "3w6zkokg5n0cvp"
+    }
+  ]
+}
