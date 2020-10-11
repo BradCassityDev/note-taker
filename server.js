@@ -14,8 +14,13 @@ app.use(express.static('public'));
 app.use('/api', apiRoutes);
 app.use('/', htmlRoutes);
 
+// Forward all unknown routes to landing page route '/'
+app.all('*', function(req, res) {
+    res.redirect("/");
+});
+
 // start app on necessary PORT
-const PORT = process.env.PORT || 3005;
+const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
     console.log(`API server now on port ${PORT}`);
 });
