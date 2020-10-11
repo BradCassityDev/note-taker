@@ -12,7 +12,6 @@ By using this application, users are able to add and remove notes. Users will do
   * NodeJS
   * Express
   * Uniqid
-  * Bootstrap
 
 ## Installation
 
