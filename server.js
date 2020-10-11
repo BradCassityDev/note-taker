@@ -15,7 +15,7 @@ app.use('/api', apiRoutes);
 app.use('/', htmlRoutes);
 
 // start app on necessary PORT
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3005;
 app.listen(PORT, () => {
-    console.log('API server now on port 3001');
+    console.log(`API server now on port ${PORT}`);
 });
